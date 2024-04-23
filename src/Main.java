@@ -58,7 +58,8 @@ public class Main {
             System.out.println("What you want to do now?");
             command = scanner.nextLine();
         }
-        System.out.println("Exiting...");
+        Logger logger = new Logger();
+        logger.log("Exiting");
         Thread.sleep(150);
 
         System.exit(0);
